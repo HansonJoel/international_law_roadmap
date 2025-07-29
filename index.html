@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheet.css" />
+    <script src="./script.js" defer></script>
+    <title>International Trade Lawyer Progress Tracker</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🎯 International Trade Lawyer Progress Tracker</h1>
+        <p>18-Month Comprehensive Career Development Program</p>
+      </div>
+
+      <div class="stats-container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" id="totalTasks">0</div>
+            <div class="stat-label">Total Tasks</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="completedTasks">0</div>
+            <div class="stat-label">Completed Tasks</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="totalMilestones">0</div>
+            <div class="stat-label">Milestones</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="completedMilestones">0</div>
+            <div class="stat-label">Completed Milestones</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" id="overallPercent">0%</div>
+            <div class="stat-label">Overall Progress</div>
+          </div>
+        </div>
+
+        <div class="overall-progress">
+          <h3>📊 Overall Program Progress</h3>
+          <div class="liquid-progress">
+            <div
+              class="liquid-fill"
+              id="overallProgressBar"
+              style="width: 0%"
+            ></div>
+            <div class="progress-text" id="overallProgressText">0%</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="phases-container">
+        <!-- Phase 1: Foundation Building (Months 1-6) -->
+        <div class="phase" data-phase="1">
+          <div class="phase-header" onclick="togglePhase(1)">
+            <div class="phase-title">
+              📚 Phase 1: Foundation Building (Months 1-6)
+            </div>
+            <div class="phase-stats">
+              <div class="phase-progress">
+                <div
+                  class="phase-progress-fill"
+                  id="phase1Progress"
+                  style="width: 0%"
+                ></div>
+              </div>
+              <span id="phase1Percent">0%</span>
+              <span class="collapse-icon">▼</span>
+            </div>
+          </div>
+          <div class="phase-content">
+            <div class="month">
+              <div class="month-header">
+                Month 1-2: Core International Trade Law Fundamentals
+              </div>
+              <div class="tasks">
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Complete WTO Introduction Course (WTO Institute)
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Study "The World Trade Organization: Law, Practice, and
+                    Policy" by Mitsuo Matsushita
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="milestone"
+                  />
+                  <div class="task-text">
+                    🎯 <strong>Milestone:</strong> Complete WTO agreement
+                    analysis
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Complete UNCITRAL Texts and CISG Fundamentals
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Study "International Commercial Law" by Roy Goode
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="milestone"
+                  />
+                  <div class="task-text">
+                    🎯 <strong>Milestone:</strong> Draft international sales
+                    contracts using CISG principles
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+              </div>
+            </div>
+            <div class="month">
+              <div class="month-header">
+                Month 3-4: Regional Trade Agreements & African Integration
+              </div>
+              <div class="tasks">
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Complete AfCFTA Specialization Course
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Study AfCFTA Agreement and all protocols
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="milestone"
+                  />
+                  <div class="task-text">
+                    🎯 <strong>Milestone:</strong> Complete Nigeria-specific
+                    AfCFTA impact analysis
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Comparative RTA Analysis (USMCA, CPTPP, EU)
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="milestone"
+                  />
+                  <div class="task-text">
+                    🎯 <strong>Milestone:</strong> Develop RTA comparison matrix
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+              </div>
+            </div>
+            <div class="month">
+              <div class="month-header">
+                Month 5-6: International Investment Law & Arbitration
+              </div>
+              <div class="tasks">
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Complete ICSID Investment Arbitration Course
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Study "International Investment Law" by Jeswald Salacuse
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="milestone"
+                  />
+                  <div class="task-text">
+                    🎯 <strong>Milestone:</strong> Complete investment treaty
+                    analysis for 3 countries
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Complete ICC International Arbitration Course
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="milestone"
+                  />
+                  <div class="task-text">
+                    🎯 <strong>Milestone:</strong> Complete mock arbitration
+                    case preparation
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 2: Specialization & Advanced Studies (Months 7-12) -->
+        <div class="phase" data-phase="2">
+          <div class="phase-header" onclick="togglePhase(2)">
+            <div class="phase-title">
+              🔬 Phase 2: Specialization & Advanced Studies (Months 7-12)
+            </div>
+            <div class="phase-stats">
+              <div class="phase-progress">
+                <div
+                  class="phase-progress-fill"
+                  id="phase2Progress"
+                  style="width: 0%"
+                ></div>
+              </div>
+              <span id="phase2Percent">0%</span>
+              <span class="collapse-icon">▼</span>
+            </div>
+          </div>
+          <div class="phase-content">
+            <div class="month">
+              <div class="month-header">
+                Month 7-8: Trade Remedies & Customs Law
+              </div>
+              <div class="tasks">
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Complete Trade Remedies Course (WTO Institute + Georgetown)
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Study WTO Anti-dumping Agreement and SCM Agreement
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="milestone"
+                  />
+                  <div class="task-text">
+                    🎯 <strong>Milestone:</strong> Complete trade remedy case
+                    simulation
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Complete WCO Customs Valuation Course
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="milestone"
+                  />
+                  <div class="task-text">
+                    🎯 <strong>Milestone:</strong> Complete customs compliance
+                    audit simulation
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+              </div>
+            </div>
+            <div class="month">
+              <div class="month-header">
+                Month 9-10: Trade Finance & Sanctions
+              </div>
+              <div class="tasks">
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">Complete ICC Trade Finance Course</div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Study UCP 600 (Documentary Credits)
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="milestone"
+                  />
+                  <div class="task-text">
+                    🎯 <strong>Milestone:</strong> Complete trade finance
+                    transaction simulation
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Complete Sanctions Compliance Course
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="milestone"
+                  />
+                  <div class="task-text">
+                    🎯 <strong>Milestone:</strong> Develop comprehensive
+                    sanctions compliance program
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+              </div>
+            </div>
+            <div class="month">
+              <div class="month-header">
+                Month 11-12: Digital Trade & Emerging Issues
+              </div>
+              <div class="tasks">
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Complete Digital Economy and Trade Course (UNCTAD + WTO)
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="milestone"
+                  />
+                  <div class="task-text">
+                    🎯 <strong>Milestone:</strong> Complete digital trade policy
+                    analysis
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Complete Trade and Climate Course (UNCTAD)
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="milestone"
+                  />
+                  <div class="task-text">
+                    🎯 <strong>Milestone:</strong> Complete sustainability
+                    compliance framework
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 3: Extended Internship (Months 13-15) -->
+        <div class="phase" data-phase="3">
+          <div class="phase-header" onclick="togglePhase(3)">
+            <div class="phase-title">
+              💼 Phase 3: Extended Internship (Months 13-15)
+            </div>
+            <div class="phase-stats">
+              <div class="phase-progress">
+                <div
+                  class="phase-progress-fill"
+                  id="phase3Progress"
+                  style="width: 0%"
+                ></div>
+              </div>
+              <span id="phase3Percent">0%</span>
+              <span class="collapse-icon">▼</span>
+            </div>
+          </div>
+          <div class="phase-content">
+            <div class="month">
+              <div class="month-header">Month 13: Trade Finance Focus</div>
+              <div class="tasks">
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Secure internship position at bank/financial institution
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Complete 160 hours supervised practical work
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="milestone"
+                  />
+                  <div class="task-text">
+                    🎯 <strong>Milestone:</strong> Complete 3 substantial trade
+                    finance projects
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Attend client meetings and negotiations
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+              </div>
+            </div>
+            <div class="month">
+              <div class="month-header">
+                Month 14: Corporate International Trade
+              </div>
+              <div class="tasks">
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Work with law firm or MNC on corporate trade matters
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Draft real legal documents and contracts
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="milestone"
+                  />
+                  <div class="task-text">
+                    🎯 <strong>Milestone:</strong> Complete corporate trade
+                    compliance project
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Participate in dispute resolution processes
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+              </div>
+            </div>
+            <div class="month">
+              <div class="month-header">Month 15: Policy & Regulatory Work</div>
+              <div class="tasks">
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Work with government agency or international organization
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Complete policy analysis and regulatory research
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="milestone"
+                  />
+                  <div class="task-text">
+                    🎯 <strong>Milestone:</strong> Complete comprehensive
+                    internship portfolio
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">Obtain supervisor recommendations</div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Phase 4: Career Launch (Months 16-18) -->
+        <div class="phase" data-phase="4">
+          <div class="phase-header" onclick="togglePhase(4)">
+            <div class="phase-title">
+              🚀 Phase 4: Career Launch (Months 16-18)
+            </div>
+            <div class="phase-stats">
+              <div class="phase-progress">
+                <div
+                  class="phase-progress-fill"
+                  id="phase4Progress"
+                  style="width: 0%"
+                ></div>
+              </div>
+              <span id="phase4Percent">0%</span>
+              <span class="collapse-icon">▼</span>
+            </div>
+          </div>
+          <div class="phase-content">
+            <div class="month">
+              <div class="month-header">Month 16: Deep Specialization</div>
+              <div class="tasks">
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Choose and begin primary specialization focus
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Complete specialized industry research
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="milestone"
+                  />
+                  <div class="task-text">
+                    🎯 <strong>Milestone:</strong> Develop expertise in chosen
+                    specialization
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Join relevant professional associations
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+              </div>
+            </div>
+            <div class="month">
+              <div class="month-header">
+                Month 17: Professional Certification & Networking
+              </div>
+              <div class="tasks">
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Complete Georgetown Certificate in International Trade Law
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Complete International Arbitration Certificate (CIArb)
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="milestone"
+                  />
+                  <div class="task-text">
+                    🎯 <strong>Milestone:</strong> Obtain professional
+                    certifications
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Attend African Trade Law Conference
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">Join IBA Trade Law Committee</div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+              </div>
+            </div>
+            <div class="month">
+              <div class="month-header">
+                Month 18: Market Entry & Job Placement
+              </div>
+              <div class="tasks">
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Compile comprehensive work portfolio
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Create professional marketing materials
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">Apply to international law firms</div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="task"
+                  />
+                  <div class="task-text">
+                    Apply to in-house corporate positions
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+                <div class="task">
+                  <input
+                    type="checkbox"
+                    class="task-checkbox"
+                    data-type="milestone"
+                  />
+                  <div class="task-text">
+                    🎯 <strong>FINAL MILESTONE:</strong> Secure position as
+                    International Trade Lawyer
+                  </div>
+                  <div class="task-status status-pending">Pending</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="btn btn-primary" onclick="saveProgress()">
+          💾 Save Progress
+        </button>
+        <button class="btn btn-success" onclick="exportToExcel()">
+          📊 Export to Excel
+        </button>
+        <button class="btn btn-info" onclick="generateReport()">
+          📋 Generate Report
+        </button>
+        <button class="btn btn-primary" onclick="resetProgress()">
+          🔄 Reset All
+        </button>
+      </div>
+    </div>
+
+    <div class="floating-progress" id="floatingProgress">0%</div>
+
+    <div class="notification" id="notification">
+      <span id="notificationText">Progress saved!</span>
+    </div>
+  </body>
+</html>
